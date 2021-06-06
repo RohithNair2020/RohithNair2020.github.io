@@ -1,0 +1,41 @@
+/* Tablet and under*/
+@media(max-width: 768px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid 
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+    }
+
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
+}
+
+
+/* Mobile */
+@media(max-width: 500px){
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgb(0,0,0,0.1);
+    }
+}

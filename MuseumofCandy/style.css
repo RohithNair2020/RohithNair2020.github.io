@@ -1,0 +1,53 @@
+html {
+    font-size: 1rem;
+}
+
+body {
+    background-color: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+h2, p {
+    color: #EA1C2C;
+}
+
+#mainsection .row {
+    margin-bottom: 45px;
+}
+
+#mainsection .row:last-of-type {
+    margin-bottom: 0px;
+}
+
+#mainnavbar .navbar-brand {
+    color: #EA1C2C;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+#mainnavbar .nav-link:hover {
+    color: #ea1c2d52
+}
+
+#mainnavbar {
+    font-size: 1.5rem;
+}
+
+#museumofcandytextblock h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+#museumofcandytextblock span {
+    color: #EA1C2C;
+}
+
+@media (max-width: 1000px) {
+    #museumofcandytextblock h1, #row2, #row3, #row4{
+        font-size: 2rem;
+    } 
+}
+
+.navbar .scrolled {
+    background-color: #dec0de;
+}

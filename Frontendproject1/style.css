@@ -1,0 +1,114 @@
+html {
+    font-size: 15px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:  #f2f2f2;
+}
+
+section {
+    width: 55%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 25px 30px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    color: white;
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Lexend Deca';
+    font-size: 12px;
+    color: white;
+}
+
+button{
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    border: none;
+    font-family: 'Lexend Deca';
+}
+.sedan {
+    background-color: #e38826;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.suv {
+    background-color: #006970;
+}
+
+.luxury {
+    background-color: #004241;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.sedan button {
+    color: #e38826;
+}
+
+.suv button {
+    color: #006970;
+}
+
+.luxury {
+    color: #004241;
+}
+
+@media (max-width: 500px){
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 65%;
+        height: 70%;
+        margin: 40px auto;
+    }
+
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        background-color: lawngreen;
+    }
+    .sedan {
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-top-right-radius: 0;
+    }
+}
+
